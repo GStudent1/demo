@@ -4,4 +4,5 @@ def add(x):
 
 def test_add():
     assert add(3)==4
+    assert add(3) == 5
 
