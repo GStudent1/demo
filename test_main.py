@@ -8,3 +8,5 @@ def test_add(x):
     assert add(4) == 5
     assert add(5) == 6
     assert add(5) == 7
+    assert add(5) == 8
+
