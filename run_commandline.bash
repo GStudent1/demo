@@ -1,0 +1,1 @@
+pytest --reruns 6 testcase/test_second.py::test_sub_second
