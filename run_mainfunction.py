@@ -1,4 +1,4 @@
 import pytest
 
 if __name__ == "__main__":
-    pytest.main(['-s' ,'test_setup_teardown.py'])
+    pytest.main(['-s' ,'study_fixture/'])
