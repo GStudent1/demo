@@ -1,1 +1,1 @@
-pytest --reruns 6 testcase/test_second.py::test_sub_second
+pytest --reruns 6  --reruns-delay 2 -s testcase/test_second.py::test_sub_second
