@@ -11,8 +11,10 @@ import pytest
 ###fixture为module级别时，在当前.py脚本里面所有用例开始前只执行一次
 ###scope="session"
 ###fixture为session级别是可以跨.py模块调用的,也就是当我们有多个.py文件的用例时候，如果多个用例只需调用一次fixture，那就可以设置为scope="session"，并且写到conftest.py文件里
+###autouse=True 自动调用fixture功能
 
-@pytest.fixture()
+
+@pytest.fixture(scope="function", autouse=True)
 def sub():
     print("我是yield前执行的")
     yield
